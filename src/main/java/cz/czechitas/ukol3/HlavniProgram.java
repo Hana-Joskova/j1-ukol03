@@ -5,9 +5,6 @@ import cz.czechitas.ukol3.model.Pamet;
 import cz.czechitas.ukol3.model.Pocitac;
 import cz.czechitas.ukol3.model.Procesor;
 
-/**
- * Spouštěcí třída celého programu
- */
 public class HlavniProgram {
 
     public static void main(String... args) {
@@ -31,15 +28,8 @@ public class HlavniProgram {
 
         System.out.println(mujPocitac.toString());
 
-        mujPocitac.zapniSe();
-        mujPocitac.zapniSe();
-
-        System.out.println(mujPocitac.toString());
-
-        mujPocitac.vypniSe();
-        mujPocitac.vypniSe();
-        mujPocitac.vypniSe();
-
+        mujPocitac.vytvorSouborOVelikosti(1000000000000000000L);
+        mujPocitac.vymazSouboryOVelikosti(10);
     }
 
 }
